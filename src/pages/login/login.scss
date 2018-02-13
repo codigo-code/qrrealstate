@@ -1,3 +1,9 @@
-page-login {
-
+.page-login {background: rgba(199,95,183,1);
+background: -moz-linear-gradient(-45deg, rgba(199,95,183,1) 0%, rgba(199,95,183,1) 0%, rgba(193,70,161,1) 51%, rgba(168,0,119,1) 51%, rgba(54,212,217,1) 53%, rgba(54,212,217,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(199,95,183,1)), color-stop(0%, rgba(199,95,183,1)), color-stop(51%, rgba(193,70,161,1)), color-stop(51%, rgba(168,0,119,1)), color-stop(53%, rgba(54,212,217,1)), color-stop(100%, rgba(54,212,217,1)));
+background: -webkit-linear-gradient(-45deg, rgba(199,95,183,1) 0%, rgba(199,95,183,1) 0%, rgba(193,70,161,1) 51%, rgba(168,0,119,1) 51%, rgba(54,212,217,1) 53%, rgba(54,212,217,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(199,95,183,1) 0%, rgba(199,95,183,1) 0%, rgba(193,70,161,1) 51%, rgba(168,0,119,1) 51%, rgba(54,212,217,1) 53%, rgba(54,212,217,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(199,95,183,1) 0%, rgba(199,95,183,1) 0%, rgba(193,70,161,1) 51%, rgba(168,0,119,1) 51%, rgba(54,212,217,1) 53%, rgba(54,212,217,1) 100%);
+background: linear-gradient(135deg, rgba(199,95,183,1) 0%, rgba(199,95,183,1) 0%, rgba(193,70,161,1) 51%, rgba(168,0,119,1) 51%, rgba(54,212,217,1) 53%, rgba(54,212,217,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c75fb7', endColorstr='#36d4d9', GradientType=1 );
 }
