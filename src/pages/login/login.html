@@ -1,14 +1,24 @@
-<ion-header>
-  <ion-navbar >
-    <ion-title primary>login</ion-title>
-  </ion-navbar>
-
-</ion-header>
+<ion-header> <ion-navbar> <ion-title primary>login</ion-title>
+</ion-navbar> </ion-header>
 
 
-<ion-content padding>
-<input [(ngModel)]="usuario" placeholder="usuario"/>
+<ion-content padding class="page-login">
+<div id="top">
+	<ion-item>
+		<ion-input [(ngModel)]="usuario"placeholder="Usuario"></ion-input>
+		<ion-icon name='person' item-left></ion-icon>
+	</ion-item>	
 <br>
-<input type="password" [(ngModel)]="password" placeholder="password" />
-<button (click)="login()">Ingreso !</button>
+	<ion-item>
+		<ion-input type="Password" [(ngModel)]="password" placeholder="password"></ion-input>
+		<ion-icon name='lock' item-left></ion-icon>
+	</ion-item>
+<br>
+</div>
+
+<div id="center" style="text-align:center;">
+	<a ion-text color='default' (click)="forgotPass()">Olvide mi password</a>
+	<br>
+	<button (click)="login()" ion-button><ion-icon name="log-in"></ion-icon>Ingresar</button>
+</div>
 </ion-content>
