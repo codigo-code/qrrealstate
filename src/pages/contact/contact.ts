@@ -18,7 +18,7 @@ export class ContactPage {
     getDepartamentos(){
         
         return new Promise(resolve=>{
-        this.http.get(`${this.baseURL}\algo.json`).subscribe(res =>resolve(res.json()));    
+//        this.http.get(`${this.baseURL}\algo.json`).subscribe(res =>resolve(res.json()));    
         });
     }
 
