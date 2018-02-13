@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,NavParams } from 'ionic-angular';
-import { Http, Response} from '@angular/http';
+//import { Http, Response} from '@angular/http';
 
 @Component({
   selector: 'page-contact',
@@ -10,7 +10,7 @@ export class ContactPage {
 
     private baseURL:string;
     equipo:any;
-  constructor(public navCtrl: NavController, private navParams: NavParams,private http:Http) {
+  constructor(public navCtrl: NavController, private navParams: NavParams) {
       this.equipo = this.navParams.data;
   }
     
