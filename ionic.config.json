@@ -1,0 +1,8 @@
+{
+  "name": "qrappmobile",
+  "app_id": "e486daba",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
