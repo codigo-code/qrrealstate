@@ -10,7 +10,7 @@ import {AlertController} from 'ionic-angular';
 })
 export class LoginPage {
 
-
+  
   usuario: string;
   password: string;
   constructor(private alertCtrl: AlertController, public navCtrl: NavController, public navParams: NavParams) {
@@ -46,29 +46,35 @@ export class LoginPage {
       ],
       buttons: [
         {
-          text: 'Cancel',
+          text: 'Cancelar',
           role: 'cancel',
           handler: data => {
+            
             console.log('Cancel clicked');
           }
         },
         {
-          text: 'Login',
+          text: 'Enviar',
           handler: data => {
-            if (User.isValid(data.email)) {
-              // send recovery email to
-            } else {
-                alert= this.alertCtrl.create({
-                title: 'Error',
-                subTitle: 'El email no pertenece a un usuario activo'
-                });
-              return false;
-            }
+           // Conditional if(email equals()){} else{}
+         
           }
         }
       ]
     });
     alert.present();
   }
+  
+  
+  clickOnLogo() {
+  let alert = this.alertCtrl.create({
+    title: 'Global Real State',
+    subTitle: 'Qué es GRS?',
+    message: 'Global Real State es una herramienta de software creada para pequeños, medianos y grandes inmobiliarios, con el objetivo de transmitir información en tiempo real de un inmueble para así facilitar su venta o alquiler al momento de la negociación.',
+    buttons: ['ok']
+  });
+  alert.present();
+}
+  
 
 }

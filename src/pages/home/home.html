@@ -1,13 +1,25 @@
+
+<!-- Created DPA, Modified AAB 14/02/2018 -->
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+	<meta charset="utf-8">
+	<ion-navbar (click)="clickOnLogo()">
+    <ion-title><img src="assets/imgs/qrAppLogoFavicon64x41.png" alt="QR-App" float-left style="padding-right:20px;">Home<br></ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="page-home">
   <h2>{{nombre}}</h2>
-  <button ion-item *ngFor="let equipo of equipos" (click)="saludo($event,equipo)">{{equipo.nombre}}</button>
-  <p>
-   Preparate para escanear!
-  </p>
+  
+  <button ion-item *ngFor="let equipo of equipos" (click)="saludo($event,equipo)" style="background-color:AliceBlue; border-radius: 5px;">{{equipo.nombre}}</button>
+  <br>
+    <ion-item class="item-content" style="border-radius: 5px;">
+    <ion-label><ion-icon ios="ios-qr-scanner" md="md-qr-scanner" style="color:red; padding-right:5px;"></ion-icon>Prender el scanner</ion-label>
+    <ion-toggle [(ngModel)]="startQR"></ion-toggle>
+  </ion-item>
+  
+  <Button ion-button medium float-right>
+   Comenzar a escanear
+  </Button>
 </ion-content>

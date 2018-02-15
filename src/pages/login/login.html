@@ -1,16 +1,30 @@
-<ion-header> <ion-navbar> <ion-title primary>login</ion-title>
-</ion-navbar> </ion-header>
+<!-- Created DPA, Modified AAB 14/02/2018 -->
 
+<ion-header>
+	<meta charset="utf-8">
+	<ion-navbar (click)="clickOnLogo()">
+		<ion-title primary>
+			<h2 ion-text color="primary"><img src="assets/imgs/qrAppLogoTrim128x128.png" alt="QR-App" float-left style="padding-right:20px;"><br>G.R.S. login</h2>
+		</ion-title>
+		<ion-action-sheet>
+		</ion-action-sheet>
+	</ion-navbar>
+	
+	<ion-toolbar>
+			Máxima cantidad de información sobre inmuebles a la venta en la palma de la mano
+	 </ion-toolbar>
+</ion-header>
+<br>
 
 <ion-content padding class="page-login">
 <div id="top">
-	<ion-item>
+	<ion-item style="border-radius: 5px;">
 		<ion-input [(ngModel)]="usuario"placeholder="Usuario"></ion-input>
 		<ion-icon name='person' item-left></ion-icon>
 	</ion-item>	
 <br>
-	<ion-item>
-		<ion-input type="Password" [(ngModel)]="password" placeholder="password"></ion-input>
+	<ion-item style="border-radius: 5px;">
+		<ion-input type="Password" [(ngModel)]="password" placeholder="Password"></ion-input>
 		<ion-icon name='lock' item-left></ion-icon>
 	</ion-item>
 <br>
@@ -20,5 +34,6 @@
 	<a ion-text color='default' (click)="forgotPass()">Olvide mi password</a>
 	<br>
 	<button (click)="login()" ion-button><ion-icon name="log-in"></ion-icon>Ingresar</button>
+	<button (click)="login()" ion-button color="danger"><ion-icon name="md-clipboard"></ion-icon>Registrarse</button>
 </div>
 </ion-content>
